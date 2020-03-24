@@ -5,7 +5,7 @@
 
 # Maven output files and directories
 target/
-.settings/
+
 
 # Gradle output files and directories
 .gradle/
