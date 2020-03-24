@@ -28,7 +28,7 @@
 					<archive>
 						<manifest>
 						<!-- replace this with the class that contains the main method. It requires also the package name if exists. -->
-							<mainClass>gradeshistogram.ChartXYLineChart</mainClass> 
+							<mainClass>gradeshistogram.HistogramGenerator</mainClass> 
 						</manifest>
 					</archive>
 					<descriptorRefs>

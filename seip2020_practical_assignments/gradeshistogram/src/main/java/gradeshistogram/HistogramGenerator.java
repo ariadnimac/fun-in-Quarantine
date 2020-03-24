@@ -31,11 +31,11 @@ public class HistogramGenerator {
 		boolean tooltips = false; 
 		boolean urls = false; 
 
-		JFreeChart chart = ChartFactory.createXYLineChart("Chart title", "x_axis title", "y_axis_title", dataset,
+		JFreeChart chart = ChartFactory.createXYLineChart("Grades Histogram", "graded", "frequency", dataset,
 				PlotOrientation.VERTICAL, legend, tooltips, urls);
 
 		
-		ChartFrame frame = new ChartFrame("First", chart);
+		ChartFrame frame = new ChartFrame("Grades", chart);
 		frame.pack();
 		frame.setVisible(true);
 	}
@@ -51,16 +51,18 @@ public class HistogramGenerator {
 		    int grade =grades.nextInt();
 		    temp.add(grade);
 		}
-		int[]dataValues  = new int[temp.size()];
-			for(int j = 0;i < dataValues.length;i++)
-				dataValues[j] = temp.get(i);
+		int[]dataValues  = new int[11];
+		for(int k =0; k<11;k++)
+			dataValues[k]=0;
+		for(int j = 0;j < temp.size();j++)
+			dataValues[temp.get(j)] = dataValues[temp.get(j)]+1;
 			 
 		grades.close();
 
 		HistogramGenerator demo = new HistogramGenerator();
 		demo.generateChart(dataValues);
-	}catch(FileNotFoundException e) {
-		 System.out.println(e.getClass());
-	}
+		}catch(FileNotFoundException e) {
+			System.out.println(e.getClass());
+		}
 	}
 }
