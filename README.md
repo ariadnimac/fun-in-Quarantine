@@ -10,6 +10,8 @@ This repository consists of:
 
 ## Getting Started
 
+Please note that the project was written in Java JDK 1.8 and built with Maven 3.6.3
+
 **Downloading**
 
 To download the project on your computer you must download the zip file or clone the repository on your computer.
