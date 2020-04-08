@@ -1,6 +1,10 @@
 
 
-# fun-in-Quarantine (https://travis-ci.com/ariadnimac/fun-in-Quarantine.svg?token=ghcacf6iv5VcjeSKztqj&branch=development)
+# fun-in-Quarantine
+
+[coverage]: (https://travis-ci.com/ariadnimac/fun-in-Quarantine.svg?token=ghcacf6iv5VcjeSKztqj&branch=development)
+ 
+
 An assignment created during the 2020 covid-19 quarantine
 
 This repository serves the purpose of completing the tasks and projects given. 
