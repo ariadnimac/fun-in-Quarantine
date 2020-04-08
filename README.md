@@ -2,8 +2,7 @@
 
 # fun-in-Quarantine
 
- https://travis-ci.com/ariadnimac/fun-in-Quarantine.svg?token=ghcacf6iv5VcjeSKztqj&branch=development
- 
+ [![Build Status](https://travis-ci.com/ariadnimac/fun-in-Quarantine.svg?token=ghcacf6iv5VcjeSKztqj&branch=development)](https://travis-ci.com/ariadnimac/fun-in-Quarantine)
 
 An assignment created during the 2020 covid-19 quarantine
 
