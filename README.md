@@ -2,7 +2,7 @@
 
 # fun-in-Quarantine
 
-[coverage]: (https://travis-ci.com/ariadnimac/fun-in-Quarantine.svg?token=ghcacf6iv5VcjeSKztqj&branch=development)
+ https://travis-ci.com/ariadnimac/fun-in-Quarantine.svg?token=ghcacf6iv5VcjeSKztqj&branch=development
  
 
 An assignment created during the 2020 covid-19 quarantine
