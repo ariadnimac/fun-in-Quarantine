@@ -43,8 +43,8 @@ exceptions: throws IllegalArguMentException for denominator input equal to zero
 
 **2.public int multiply(int x, int y):**
 
-input: int x, int y, so as x, y >0 
-output: int result, the result of the multiple of the given numbers 
+input: int x, int y, so as x, y >0   
+output: int result, the result of the multiple of the given numbers   
 exceptions:throws IllegalArguMentException when x or y given is below 0
            throws IllegalArguMentException when the result is bigger than the Integer Max Value
 
@@ -54,10 +54,8 @@ exceptions:throws IllegalArguMentException when x or y given is below 0
 
 input: an object of type FileIO (a class in the io package)
        a string with the path of the file to read 
-       an object of type MyMath the aforementioned class of this package
-
-output: returns an array of integers which contains only the prime numbers of the initial array that was created from the given file
-
+       an object of type MyMath the aforementioned class of this package  
+output: returns an array of integers which contains only the prime numbers of the initial array that was created from the given file  
 exceptions: none 
 
 
