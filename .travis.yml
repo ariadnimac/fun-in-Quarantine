@@ -18,5 +18,5 @@ script:
     # the cobertura:cobertura is optional only for advanced coverage reporting and, if exists, is used by CodeCov 
 
 after_success:
-- bash <(curl -s https://codecov.io/bash) -t CODECOV_TOKEN="9c80464e-0d94-4a8f-a152-305595eaa667"
+- bash <(curl -s https://codecov.io/bash) -t 9c80464e-0d94-4a8f-a152-305595eaa667
 - echo "Hello there!"
