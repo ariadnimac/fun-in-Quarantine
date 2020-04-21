@@ -38,8 +38,10 @@ public class FileIO {
 			reader = new BufferedReader(new FileReader(file));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
-				int number = Integer.parseInt(line);
-				numbersList.add(number);
+				if (line.matches("\\d+")) {
+					int number = Integer.parseInt(line);
+					numbersList.add(number);
+				}
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
