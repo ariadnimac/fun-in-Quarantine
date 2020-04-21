@@ -11,8 +11,8 @@ This repository serves the purpose of completing the tasks and projects given.
 This repository consists of:
 
 1. A parent Maven Project: **seip2020_practical_assignments**
-2. A child Maven Project: **histogramgenerator** that generates a histogram from a given .txt file that stores the grades that is being given as an argument through the command line.
-3. A child Maven Project: **unittesting** that demonstrates the  
+2. A child Maven Project: [histogramgenerator](seip2020_practical_assignments/gradeshistogram/README.md) that generates a histogram from a given .txt file that stores the grades that is being given as an argument through the command line.
+3. A child Maven Project: [unittesting](seip2020_practical_assignments/unittesting/README.md) that demonstrates the  
 
 ## Getting Started
 
