@@ -2,7 +2,7 @@
 
 # fun-in-Quarantine
 
- [![Build Status](https://travis-ci.com/ariadnimac/fun-in-Quarantine.svg?token=ghcacf6iv5VcjeSKztqj&branch=development)](https://travis-ci.com/ariadnimac/fun-in-Quarantine)  [![codecov](https://codecov.io/gh/ariadnimac/fun-in-Quarantine/branch/master/graph/badge.svg?token=f7ccf03a-0f81-4d2b-80d0-2a46db272571)](https://codecov.io/gh/ariadnimac/fun-in-Quarantine)
+ [![Build Status](https://travis-ci.com/ariadnimac/fun-in-Quarantine.svg?token=ghcacf6iv5VcjeSKztqj&branch=development)](https://travis-ci.com/ariadnimac/fun-in-Quarantine)  [![codecov](https://codecov.io/gh/ariadnimac/fun-in-Quarantine/branch/development/graph/badge.svg?token=AQioBsON9h)](https://codecov.io/gh/ariadnimac/fun-in-Quarantine)
 
 An assignment created during the 2020 covid-19 quarantine
 
