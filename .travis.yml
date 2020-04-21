@@ -14,7 +14,7 @@ before_script:
 
 script: 
   - mvn clean package
-  - go test -race -coverprofile=coverage.txt -covermode=atomic
+  
     # the coveralls:report is required only for the coveralls coverage service
     # the cobertura:cobertura is optional only for advanced coverage reporting and, if exists, is used by CodeCov 
 
