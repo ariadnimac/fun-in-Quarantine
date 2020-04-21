@@ -3,13 +3,13 @@
 This module serves the purpose of demonstrating the use of unittesting in various classes that perform basic mathematic functions.
 The classes are seperated into two packages: **math** and **io**
 
-## Main Classes (src/main/java)
+## Main Classes  
 
 ### math package 
 
-**MyMath:** 
+#### MyMath: 
 
-Contains the mothods:
+Contains the methods:
 
 **1.public int factorial(int n):**
 
@@ -39,7 +39,7 @@ Contains the mothods:
 
 **input:** int x, int y, so as x, y >0   
 **output:** int result, the result of the multiple of the given numbers   
-**exceptions:** throws IllegalArguMentException when x or y given is below 0  
+**exceptions:** throws IllegalArguMentException when x or y given is below 0    
            throws IllegalArguMentException when the result is bigger than the Integer Max Value
 
 **ArrayOperations**
@@ -53,5 +53,18 @@ Contains the mothods:
 exceptions: none 
 
 
+
+### io package
+
+#### FileIO:
+
+Contains the methods:
+
+**1.public int[] readFile(String filepath):**  
+
+**input:** a path of the file to read   
+**output:** an array of int with the numbers contained in the file   
+**exceptions:** throws IOException    
+                throws IllegalArgumentException when the file is empty or does not exist
 
 
