@@ -18,4 +18,4 @@ script:
     # the cobertura:cobertura is optional only for advanced coverage reporting and, if exists, is used by CodeCov 
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t f7ccf03a-0f81-4d2b-80d0-2a46db272571
+  - bash <(curl -s https://codecov.io/bash) -t 5fdab361-a241-486d-8cea-a54009bf3167
