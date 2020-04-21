@@ -44,11 +44,8 @@ exceptions: throws IllegalArguMentException for denominator input equal to zero
 **2.public int multiply(int x, int y):**
 
 input: int x, int y, so as x, y >0 
-
 output: int result, the result of the multiple of the given numbers 
-
 exceptions:throws IllegalArguMentException when x or y given is below 0
-
            throws IllegalArguMentException when the result is bigger than the Integer Max Value
 
 **ArrayOperations**
