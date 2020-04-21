@@ -37,4 +37,21 @@ public class FileIOTest {
 		thrown.expectMessage("Input file does not exist");
 		fio.readFile(nonExistentFilepath);
 	}
+	
+	@Test 
+	public void test_readFile_invalid_entries() {
+		String invalidInputFilepath = resourcesPath.concat("invalid_entries.txt");
+		int result[] = new int[] {1,2,5,6,7,98,67,45,45,7,8,9,2,4,7,89,76,54,32,1,999};
+		Assert.assertArrayEquals(result, fio.readFile(invalidInputFilepath));
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
