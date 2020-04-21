@@ -18,11 +18,11 @@ This repository consists of:
 
 Please note that the project was written in Java JDK 1.8 and built with Maven 3.6.3
 
-**Downloading**
+## Downloading
 
 To download the project on your computer you must download the zip file or clone the repository on your computer.
 
-**Building** 
+## Building
 
 Execute the following command in the repository root directory in order to build the project.
 
@@ -35,7 +35,7 @@ Running this command will also generate a report of the code coverage produced b
 ```sh
 mvn clean install jacoco:report
 ```
-**Testing** 
+## Testing
 
 Execute the following command in the repository root directory in order to run the unit tests.
 
@@ -46,7 +46,7 @@ To generate a test coverage report run the command
 ```sh
 mvn test jacoco:report
 ```
-**Travis CI** 
+## Travis CI
 This project uses the services of Tracis CI to ensure that everytime a git-push is executed the project is tested and built correctly. 
 
 
