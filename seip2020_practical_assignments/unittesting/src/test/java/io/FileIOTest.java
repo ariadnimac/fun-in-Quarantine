@@ -4,7 +4,11 @@ import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-
+/**
+ * 
+ * @author ariadnimac
+ *
+ */
 
 public class FileIOTest {
 	FileIO fio = new FileIO();
