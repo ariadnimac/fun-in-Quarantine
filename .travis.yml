@@ -13,10 +13,12 @@ before_script:
   - ls -la # this command just prints the contents of the current working directory.
 
 script: 
-  - mvn clean package
-  
+  - mvn package jacoco:report
+
     # the coveralls:report is required only for the coveralls coverage service
     # the cobertura:cobertura is optional only for advanced coverage reporting and, if exists, is used by CodeCov 
-
+env:
+  global:
+    - CODECOV_TOKEN=: 5fdab361-a241-486d-8cea-a54009bf3167
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 5fdab361-a241-486d-8cea-a54009bf3167
