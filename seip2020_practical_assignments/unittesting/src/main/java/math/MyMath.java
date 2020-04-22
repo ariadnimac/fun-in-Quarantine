@@ -7,7 +7,8 @@ package math;
  */
 
 public class MyMath {
-	/**Accepts a number and calculates its factorial
+	/**
+	 * Accepts a number and calculates its factorial
 	 * 
 	 * @param n
 	 * @return the factorial of n
