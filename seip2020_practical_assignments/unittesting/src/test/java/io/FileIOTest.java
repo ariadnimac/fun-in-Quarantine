@@ -5,14 +5,24 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 /**
+ * The FileiIO tests various test cases
+ * of the functions included in the FileIO class
+ * 
  * 
  * @author ariadnimac
  *
  */
 
 public class FileIOTest {
-	FileIO fio = new FileIO();
-	public static String resourcesPath = "src/test/resources/";
+	FileIO fio = new FileIO();//new FileIO object
+	public static String resourcesPath = "src/test/resources/";//all files used in the cases will be in the resourceds package
+	/**
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
+	
 	
 	@Test 
 	public void test_readFile_normal_cases() {

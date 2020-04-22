@@ -29,11 +29,20 @@ public class ArithmeticOperationsTest {
 	@Rule 
 	public ExpectedException thrown = ExpectedException.none(); //initialize it to .none()
 	@Test 
-	public void test_multiply_throw_exception_for_negative_input() {
+	public void test_multiply_throw_exception_for_x_negative_input() {
 	
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("x & y should be >= 0");
 		ao.multiply(-9, 5);
+		
+	}
+	
+	@Test 
+	public void test_multiply_throw_exception_for_y_negative_input() {
+	
+		thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("x & y should be >= 0");
+		ao.multiply(9, -5);
 		
 	}
 	
