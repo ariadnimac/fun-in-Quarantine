@@ -20,7 +20,7 @@ public class ArithmeticOperationsTest {
 	}
 	
 	@Test 
-	public void test_divide_zero_noumerator() {
+	public void test_divide_zero_numerator() {
 		Assert.assertEquals(0, ao.divide(0, 5.1),0.00001);
 	}
 	
@@ -29,6 +29,11 @@ public class ArithmeticOperationsTest {
 	@Test 
 	public void test_multiply_x_zero() {
 		Assert.assertEquals(0, ao.multiply(0, 5));
+	}
+	
+	@Test 
+	public void test_multiply_y_zero() {
+		Assert.assertEquals(0, ao.multiply(5, 0));
 	}
 	
 
