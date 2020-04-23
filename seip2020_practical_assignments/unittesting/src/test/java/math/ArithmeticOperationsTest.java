@@ -42,7 +42,7 @@ public class ArithmeticOperationsTest {
 	}
 	@Test 
 	public void test_multiply_x_y_positive() {
-		Assert.assertEquals(0, ao.multiply(5, 5));
+		Assert.assertEquals(25, ao.multiply(5, 5));
 	}
 
 	@Rule 
