@@ -19,6 +19,12 @@ public class ArithmeticOperationsTest {
 		Assert.assertEquals(4.2, ao.divide(21.42, 5.1),0.00001);
 	}
 	
+	@Test 
+	public void test_divide_zero_noumerator() {
+		Assert.assertEquals(0, ao.divide(0, 5.1),0.00001);
+	}
+	
+	
 	
 	@Test 
 	public void test_multiply_x_zero() {
