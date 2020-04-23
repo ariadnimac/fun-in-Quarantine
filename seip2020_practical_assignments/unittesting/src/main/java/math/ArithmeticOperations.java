@@ -38,9 +38,7 @@ public class ArithmeticOperations {
 			throw new IllegalArgumentException("x & y should be >= 0");
 	    }else if (x==0 || (y==0)) {
     	    return 0;
-	    }else if (y>0 && x <= Integer.MAX_VALUE/y) {
-			return x*y;	
-		}else if (x>0 && y <= Integer.MAX_VALUE/x) {
+	    }else if (x <= Integer.MAX_VALUE/y) {
 			return x*y;	
 	    }else {
 			throw new IllegalArgumentException("The product does not fit in an Integer variable");		
