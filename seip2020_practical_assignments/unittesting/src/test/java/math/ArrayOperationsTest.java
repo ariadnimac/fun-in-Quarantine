@@ -15,7 +15,7 @@ public class ArrayOperationsTest {
 	ArrayOperations ao = new ArrayOperations();
 	
 	@Test
-	public void test_findPrimesInFile() {
+	public void test_find_primes_in_file() {
 		FileIO fio = mock(FileIO.class);
 		MyMath mm = mock(MyMath.class);
 		int [] mock_return = new int[] {3,5,6,8,9,10,13};
@@ -28,7 +28,7 @@ public class ArrayOperationsTest {
 		when(mm.isPrime(9)).thenReturn(false);
 		when(mm.isPrime(10)).thenReturn(false);
 		when(mm.isPrime(13)).thenReturn(true);
-		Assert.assertArrayEquals(new int [] {3,5,13},ao.findPrimesInFile(fio, path, mm));
+		Assert.assertArrayEquals(new int [] {3,5,13},ao.find_primes_in_file(fio, path, mm));
 	}
 	
 

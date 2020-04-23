@@ -27,7 +27,7 @@ public class ArrayOperations {
 	 * @return an array that contains only the prime numbers of the initial array
 	 */
 	
-	 int[] findPrimesInFile(FileIO fileIo, String filepath, MyMath myMath) {
+	 int[] find_primes_in_file(FileIO fileIo, String filepath, MyMath myMath) {
 		 int [] all_numbers;
 		 MyMath mm = new MyMath();
 		 FileIO fio = new FileIO();
