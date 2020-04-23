@@ -40,6 +40,10 @@ public class ArithmeticOperationsTest {
 	public void test_multiply_x_and_y_zero() {
 		Assert.assertEquals(0, ao.multiply(0, 0));
 	}
+	@Test 
+	public void test_multiply_x_y_positive() {
+		Assert.assertEquals(0, ao.multiply(5, 5));
+	}
 
 	@Rule 
 	public ExpectedException thrown = ExpectedException.none(); //initialize it to .none()
