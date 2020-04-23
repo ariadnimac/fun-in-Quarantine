@@ -25,10 +25,6 @@ public class MyMathFactorialParameterizedTest {
 	public int input;
 	@Parameter (value = 1)
 	public int result;
-	@Parameter (value = 2) 
-	public Class<? extends Exception> expectedException;
-	@Parameter (value = 3)
-	public String expectedExceptionMsg;
 
 
 	MyMath mm = new MyMath();
@@ -38,10 +34,8 @@ public class MyMathFactorialParameterizedTest {
 	@Parameters
 	public static Collection<Object[]> data() {
 		Object[][] data = new Object[][]{
-			{0,1,IllegalArgumentException.class, "Given number must be between 0 and 12"},
-			{1,1,null, null},
-			{2,2, null, null},
-			{12,12,java.lang.IllegalArgumentException.class,"Given number must be between 0 and 12"}
+			{1,1},
+			{2,2},
 			};
 		
 		return Arrays.asList(data);
@@ -49,10 +43,7 @@ public class MyMathFactorialParameterizedTest {
 	
 	@Test
 	public void testFactorialNormalCases() {
-		if (expectedException != null) {
-	        thrown.expect(expectedException);
-	        thrown.expectMessage(expectedExceptionMsg);
-		}
+		
 		Assert.assertEquals(result, mm.factorial(input));
 		
 	}
