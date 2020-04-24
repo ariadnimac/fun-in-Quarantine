@@ -37,10 +37,15 @@ public class FileIO {
 		try {
 			reader = new BufferedReader(new FileReader(file));
 			String line = null;
+			int number =0;
 			while ((line = reader.readLine()) != null) {
-				if (line.matches("\\d+")) {
-					int number = Integer.parseInt(line);
-					numbersList.add(number);
+				if (line.matches("-?\\d+")) {
+					try {
+					    number = Integer.parseInt(line);
+					    numbersList.add(number);    
+					}catch(NumberFormatException  e){
+					}
+    
 				}
 			}
 		} catch (IOException e) {
