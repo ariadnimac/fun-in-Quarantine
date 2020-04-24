@@ -17,9 +17,14 @@ public class FileIOTest {
 	FileIO fio = new FileIO();//new FileIO object
 	public static String resourcesPath = "src/test/resources/";//all files used in the cases will be in the resourceds package
 	/**
+	 * The FileIOTest serves the purpose of testing the method readFile 
+	 * of the class FioleIO 
+	 * It checks 4 test cases:
 	 * 
-	 * 
-	 * 
+	 * 1.valid (only integers) entries
+	 * 2.empty file given
+	 * 3.non existing file
+	 * 4.in valid (non integers) entries 
 	 * 
 	 */
 	
