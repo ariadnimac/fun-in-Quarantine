@@ -39,14 +39,14 @@ public class FileIO {
 			String line = null;
 			int number =0;
 			while ((line = reader.readLine()) != null) {
-				if (line.matches("-?\\d+")) {
 					try {
 					    number = Integer.parseInt(line);
 					    numbersList.add(number);    
 					}catch(NumberFormatException  e){
 					}
+					
     
-				}
+				
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
