@@ -12,15 +12,15 @@ public class DemoClient {
 		String filepath = "src/main/resources/TestClass.java";
 		String sourceCodeAnalyzerType = "regex";
 		String sourceFileLocation = "local";
-		String outputFilePath = "output_metrics";
-		String outputFileType = "csv";
+		String outputFilepath = "output_metrics";
+		String outputType = "csv";
 		
 		if(args.length == 5) {
 			filepath = args[0];
 			sourceCodeAnalyzerType = args[1];
 			sourceFileLocation = args[2];
-			outputFilePath = args[3];
-			outputFileType = args[4];
+			outputFilepath = args[3];
+			outputType = args[4];
 		} else if (args.length != 0) {
 			System.out.println("Incorrect number of arguments.");
 			System.exit(1);
@@ -36,8 +36,22 @@ public class DemoClient {
 		metrics.put("nom",nom);
 		metrics.put("noc",noc);
 				
-		MetricsExporter exporter = new MetricsExporter();
-		exporter.writeFile(outputFileType, metrics, outputFilePath);
+		
+	}
+	MetricsExporter exporter;
+	
+	public void writeFile(String outputType, Map<String, Integer> metrics, String outputFilepath) {
+		if (outputType.equals("csv")) {
+			exporter = new CsvExporter();
+			
+		} else if (outputType.equals("json")) {
+			
+			exporter = new JsonExporter();
+		} else {
+			throw new IllegalArgumentException("Unknown type : " + outputType);
+		}
+		
+		exporter.writeFile(outputType, metrics, outputFilepath);
 	}
 
 }

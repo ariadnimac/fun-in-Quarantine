@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
  * namely regex (with the use of regular expressions) and 
  * strcomp (with the use of string comparison).
  * This class deliberately contains code smells and violations of design principles. 
- * @author agkortzis
+ * @author ariadnimac
  *
  */
 public class SourceCodeAnalyzer {
