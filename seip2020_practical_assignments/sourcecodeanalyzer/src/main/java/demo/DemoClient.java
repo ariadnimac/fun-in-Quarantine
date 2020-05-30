@@ -26,40 +26,10 @@ public class DemoClient {
 			System.exit(1);
 		}
 		
-		
-		SrcAnalyzer analyzer;
-		
-		if (sourceCodeAnalyzerType == "regex") {
-			analyzer = new RegexAnalyzer(sourceFileLocation);
-		}else {
-			analyzer = new StrcompAnalyzer(sourceFileLocation);
-		}
-
-		int loc = analyzer.calculateLOC(filepath, sourceCodeAnalyzerType);
-		int nom = analyzer.calculateNOM(filepath, sourceCodeAnalyzerType);
-		int noc = analyzer.calculateNOC(filepath, sourceCodeAnalyzerType);
-		
-		Map<String, Integer> metrics = new HashMap<>();
-		metrics.put("loc",loc);
-		metrics.put("nom",nom);
-		metrics.put("noc",noc);
-				
-		
+		Factory fact = new Factory();
+		Map<String, Integer> metrics = fact.analyze(sourceCodeAnalyzerType,sourceFileLocation,filepath);
+		fact.writeFile(outputType,metrics, outputFilepath);
 	}
-	MetricsExporter exporter;
 	
-	public void writeFile(String outputType, Map<String, Integer> metrics, String outputFilepath) {
-		if (outputType.equals("csv")) {
-			exporter = new CsvExporter();
-			
-		} else if (outputType.equals("json")) {
-			
-			exporter = new JsonExporter();
-		} else {
-			throw new IllegalArgumentException("Unknown type : " + outputType);
-		}
-		
-		exporter.writeFile(outputType, metrics, outputFilepath);
-	}
 
 }

@@ -8,8 +8,4 @@ public interface SrcAnalyzer {
 	public int calculateLOC(String filepath, String analyzerType) throws IOException;
 	public int calculateNOC(String filepath, String analyzerType) throws IOException;
 	
-	
-
-		
-
 }

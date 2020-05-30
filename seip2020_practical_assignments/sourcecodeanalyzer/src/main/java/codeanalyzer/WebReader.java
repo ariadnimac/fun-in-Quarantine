@@ -8,11 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WebReader implements SrcFileReader{
-	private String type;
-	
-	public WebReader(String _type) {
-		this.type = _type;
-	}
 
 	
 	@Override

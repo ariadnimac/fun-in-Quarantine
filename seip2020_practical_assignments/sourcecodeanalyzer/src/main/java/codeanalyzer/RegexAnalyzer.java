@@ -5,10 +5,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegexAnalyzer implements SrcAnalyzer{
-	private SourceFileReader fileReader;
+	private SrcFileReader fileReader;
 	
 	public RegexAnalyzer(String fileReaderType) {
-		this.fileReader = new SourceFileReader(fileReaderType);
+		if (fileReaderType== "web") {
+			this.fileReader = new WebReader();
+		}else {
+			this.fileReader = new LocalReader();
+		}
 	}
 	
 	public int calculateNOM(String filepath, String analyzerType) throws IOException {

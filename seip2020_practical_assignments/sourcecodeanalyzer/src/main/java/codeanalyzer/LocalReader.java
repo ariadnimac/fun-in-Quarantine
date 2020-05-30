@@ -8,11 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LocalReader implements SrcFileReader{
-	private String type;
-	
-	public LocalReader(String _type) {
-		this.type = _type;
-	}
 	
 	
 	@Override
