@@ -28,7 +28,7 @@ Build the executable Java application with:
 ```sh
 mvn package jacoco:report
 ```
-	mvn package jacoco:report
+	
 
 ## Running  
 
