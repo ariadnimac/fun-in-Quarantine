@@ -25,11 +25,15 @@ To remove all the checks from the client, a Factory was created in order to call
 ## Building
 
 Build the executable Java application with: 
+```sh
+mvn package jacoco:report
+```
 	mvn package jacoco:report
 
 ## Running  
 
 Run the executable by executing
+```sh
 	java –jar “jar-with-dependencies” arg0 arg1 arg2 arg3 arg4
 were args translate to: 	
 	arg0 = “JavaSourceCodeInputFile” (e.g., src/test/resources/TestClass.java)
@@ -39,3 +43,4 @@ were args translate to:
 	arg4 = “OutputFileType” [csv|json]
 example: 
 	java –jar ./target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv
+```
