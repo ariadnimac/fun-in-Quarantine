@@ -25,8 +25,16 @@ public class DemoClient {
 			System.out.println("Incorrect number of arguments.");
 			System.exit(1);
 		}
+		
+		
+		SrcAnalyzer analyzer;
+		
+		if (sourceCodeAnalyzerType == "regex") {
+			analyzer = new RegexAnalyzer(sourceFileLocation);
+		}else {
+			analyzer = new StrcompAnalyzer(sourceFileLocation);
+		}
 
-		SourceCodeAnalyzer analyzer = new SourceCodeAnalyzer(sourceFileLocation);
 		int loc = analyzer.calculateLOC(filepath, sourceCodeAnalyzerType);
 		int nom = analyzer.calculateNOM(filepath, sourceCodeAnalyzerType);
 		int noc = analyzer.calculateNOC(filepath, sourceCodeAnalyzerType);
