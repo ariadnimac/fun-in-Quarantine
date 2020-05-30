@@ -19,6 +19,8 @@ For the purose of analyzing the source code with the use either of regular expre
 ### Export metrics into a new file 
 For the purose of exporting the metrics calculated as explained above and write them into a new file <b>Strategy Pattern</b> was again chosen to enhance the extensibility of the code. That means that there is an interface called "MetricsExporter" that is being implemented by the classes "JsonExporter" and "CsvExporter".
 
+### Factory
+To remove all the checks from the client, a Factory was created in order to call the appropriate methods depending on the user's input.
 
 ## Building
 
