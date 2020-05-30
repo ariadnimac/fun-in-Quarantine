@@ -6,7 +6,7 @@ The code itself analyzes a source code file and exports the calculated metrics i
 
 ## Class Diagram 
 
-![Class Diagram](https://github.com/ariadnimac/fun-in-Quarantine/seip2020_practical_assignments/sourcecodeanalyzer/SrcAnalyzer.png)
+![Class Diagram](https://github.com/ariadnimac/fun-in-Quarantine/seip2020_practical_assignments/sourcecodeanalyzer/SrcAnalyzer.jpg)
 
 ## Design Patterns Used - Class Diagram Explanation 
 
